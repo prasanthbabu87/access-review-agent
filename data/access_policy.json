@@ -1,0 +1,30 @@
+{
+  "application": "FinanceERP",
+  "review_period_end": "2026-09-30",
+  "dormancy_threshold_days": 90,
+  "role_descriptions": {
+    "AP_CLERK": "Create and edit supplier invoices",
+    "VENDOR_MAINT": "Create and change vendor master data incl. bank details",
+    "PAY_APPROVER": "Approve and release outgoing payments",
+    "GL_POSTER": "Post journal entries",
+    "GL_APPROVER": "Approve journal entries",
+    "REPORT_VIEW": "Read-only financial reporting",
+    "SYS_ADMIN": "Application administration, user and configuration management"
+  },
+  "role_matrix": {
+    "Finance-AP": ["AP_CLERK", "VENDOR_MAINT", "REPORT_VIEW"],
+    "Finance-Treasury": ["PAY_APPROVER", "REPORT_VIEW"],
+    "Finance-GL": ["GL_POSTER", "GL_APPROVER", "REPORT_VIEW"],
+    "Finance": ["REPORT_VIEW"],
+    "IT": ["SYS_ADMIN", "REPORT_VIEW"],
+    "Sales": ["REPORT_VIEW"],
+    "HR": ["REPORT_VIEW"]
+  },
+  "sod_rules": [
+    {"id": "SOD-1", "roles": ["VENDOR_MAINT", "PAY_APPROVER"], "risk": "Create a fictitious vendor and approve payment to it"},
+    {"id": "SOD-2", "roles": ["AP_CLERK", "PAY_APPROVER"], "risk": "Enter a fraudulent invoice and approve its payment"},
+    {"id": "SOD-3", "roles": ["GL_POSTER", "GL_APPROVER"], "risk": "Post and approve own journal entries"},
+    {"id": "SOD-4", "roles": ["SYS_ADMIN", "GL_POSTER"], "risk": "Administrator can post transactions and alter logs"},
+    {"id": "SOD-5", "roles": ["SYS_ADMIN", "PAY_APPROVER"], "risk": "Administrator can release payments and alter controls"}
+  ]
+}

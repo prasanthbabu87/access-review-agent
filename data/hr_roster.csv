@@ -1,0 +1,24 @@
+employee_id,name,department,title,manager_id,status,termination_date
+E100,Anita Rao,Finance-AP,AP Manager,E120,active,
+E101,Vikram Shah,Finance-AP,AP Clerk,E100,active,
+E102,Meera Iyer,Finance-AP,AP Clerk,E100,active,
+E103,Rahul Menon,Finance-AP,Vendor Data Analyst,E100,active,
+E104,Deepa Nair,Finance-AP,AP Clerk,E100,terminated,2026-08-12
+E105,Arjun Pillai,Finance-Treasury,Treasury Analyst,E106,active,
+E106,Kavya George,Finance-Treasury,Treasury Manager,E120,active,
+E107,Sanjay Das,Finance-Treasury,Treasury Analyst,E106,active,
+E108,Lakshmi Thomas,Finance-GL,GL Accountant,E110,active,
+E109,Naveen Kumar,Finance-GL,GL Accountant,E110,active,
+E110,Priya Varghese,Finance-GL,Controller,E120,active,
+E111,Rohan Joseph,Finance-GL,GL Accountant,E110,terminated,2026-06-30
+E112,Sneha Reddy,IT,ERP Administrator,E115,active,
+E113,Kiran Bhat,IT,Support Engineer,E115,active,
+E114,Farhan Ali,IT,Support Engineer,E115,active,
+E115,Divya Krishnan,IT,IT Manager,E120,active,
+E116,Ajay Verma,Sales,Account Manager,E117,active,
+E117,Pooja Hegde,Sales,Sales Director,E120,active,
+E118,Manoj Kurian,Sales,Sales Analyst,E117,active,
+E119,Reshma Paul,HR,HR Business Partner,E120,active,
+E120,Suresh Nambiar,Finance,CFO,,active,
+E121,Gautam Sen,Finance-AP,AP Clerk,E100,active,
+E122,Ritu Malhotra,Finance-Treasury,Treasury Analyst,E106,terminated,2026-09-05
